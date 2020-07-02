@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" type="module" defer></script>
+</head>
+<body>
+    <div id="container">
+
+        <h1>Valutaomvandlare</h1>
+        <div class="left">
+        <label for="baseCurrency">Basvaluta</label>
+        <select id="baseCurrency">
+        </select>
+        <br>
+        <br>
+        <input type="text" id="txtBaseCurrency">
+    </div>      
+    <div class="left">
+        <label for="motvaluta">Motvaluta</label>
+        <select id="quoteCurrency">
+        </select>
+        <br>
+        <br>
+        <input type="text" id="txtQuoteCurrency" readonly>
+    </div>
+        <div id="subContainer">
+            <button id="btnBuy">Köp</button>
+            <button id="btnSell">Sälj</button>
+            <table>
+                <tr>
+                    <th>Basvaluta</th>
+                    <th>Motvaluta</th>
+                </tr>
+                <tr>
+                    <td id="lblBaseCurrency">-</td>
+                    <td id="lblQuoteCurrency">-</td>
+                </tr>
+                <tr>
+                    <td id="option">-</td>
+                    <td class="green" id="lblPrice">-</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
